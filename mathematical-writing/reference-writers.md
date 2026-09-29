@@ -79,7 +79,11 @@ Candidates to investigate:
 - other historians/translators working directly with primary mathematical texts.
 
 ### Newton translation / reconstruction reference
-User recalled a physicist or mathematically sophisticated writer who translated or reconstructed Newton. Name unresolved from dictation; identify before adding a specific attribution.
+Two nearby references should be kept distinct:
+- I. Bernard Cohen and Anne Whitman — the 1999 modern English translation of Newton's *Principia*.
+- S. Chandrasekhar — physicist and author of *Newton's Principia for the Common Reader* (1995), a mathematical analysis/reconstruction rather than the translation itself.
+
+The recalled “physicist who did a translation of Newton” may conflate these two; preserve the distinction until the intended reference is confirmed.
 
 ## Mixed / diagnostic references
 
@@ -102,19 +106,20 @@ Use paired examples: preserve the mathematical decomposition while testing wheth
 
 These were supplied as possible references and should be filled out with exact works and examples:
 
-- Giancarlo — surname/work unresolved from dictation.
-- Robbie — surname/work unresolved from dictation.
+- Gian-Carlo Rota — probable intended name; study especially his ability to give mathematical prose a strong conceptual voice.
+- Ravi Vakil — probable intended name; especially *The Rising Sea: Foundations of Algebraic Geometry* and later expository writing.
 - Victor Snaith.
 - Chris Quigg — likely intended name; confirm exact mathematical text before using.
-- author of *1-2-3 of Modular Forms* — identify exact intended author/editor contribution before assigning examples.
-- Pierre-Louis Lions? / "parallel Luffy" — unresolved from dictation; do not guess.
+- Don Zagier — likely intended from *The 1-2-3 of Modular Forms*; his chapter “Elliptic Modular Forms and Their Applications” is an obvious candidate. The volume also includes Jan Hendrik Bruinier, Gerard van der Geer, and Günter Harder.
+- Paolo Aluffi — probable intended name; *Algebra: Chapter 0* is a strong candidate for structural study.
 - Benoît Mandelbrot.
 - Frank Adams.
-- Rob Price — exact person/work unresolved; confirm.
+- Rob Price — exact person/work still unresolved; do not guess.
 - Dan Margalit.
 - David Eisenbud.
 - Joe Harris.
 - Justin Curry.
+- Elias Wegert — probable intended “wager”; *Visual Complex Functions* is especially useful for studying exposition in which visualization changes the organization of the subject rather than merely illustrating it.
 
 ## Corpus rule
 
