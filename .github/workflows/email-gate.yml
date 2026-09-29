@@ -1,0 +1,23 @@
+name: email-gate
+
+on:
+  push:
+    paths:
+      - "scripts/minto_email_check.py"
+      - "rubrics/**"
+      - "tests/**"
+      - ".github/workflows/email-gate.yml"
+  pull_request:
+    paths:
+      - "scripts/minto_email_check.py"
+      - "rubrics/**"
+      - "tests/**"
+      - ".github/workflows/email-gate.yml"
+
+jobs:
+  deterministic-envelope:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test receipt and stale-draft rejection
+        run: python3 -m unittest discover -s tests -v
