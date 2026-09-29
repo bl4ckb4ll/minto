@@ -1,0 +1,38 @@
+#!/bin/sh
+# Mock mathematical-writing emitter.
+#
+# Reads plain text from stdin (or optional files) and emits a deliberately
+# lossy stand-in for a future rewrite: the first line, three distinct random
+# interior lines in their original order, and the final line.
+#
+# Short inputs (five lines or fewer) pass through unchanged.
+
+exec awk '
+{
+    line[NR] = $0
+}
+END {
+    if (NR <= 5) {
+        for (i = 1; i <= NR; i++)
+            print line[i]
+        exit
+    }
+
+    srand()
+    span = NR - 2
+
+    a = 2 + int(rand() * span)
+    do b = 2 + int(rand() * span); while (b == a)
+    do c = 2 + int(rand() * span); while (c == a || c == b)
+
+    if (a > b) { t = a; a = b; b = t }
+    if (b > c) { t = b; b = c; c = t }
+    if (a > b) { t = a; a = b; b = t }
+
+    print line[1]
+    print line[a]
+    print line[b]
+    print line[c]
+    print line[NR]
+}
+' "$@"
